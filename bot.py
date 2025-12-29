@@ -1,16 +1,15 @@
-import os
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_core.messages import SystemMessage, HumanMessage
 
-# Load API key from Streamlit Cloud Secrets
-api_key = os.environ.get("GROQ_API_KEY")
+# Load API key securely
+api_key = st.secrets["GROQ_API_KEY"]
 
 # Initialize Groq LLM
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
     temperature=0.2,
-    api_key=api_key  # Pass API key explicitly
+    api_key=api_key
 )
 
 # System prompt
