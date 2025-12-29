@@ -1,32 +1,3 @@
-# Core
-python-dotenv
-requests
-
-# Groq LLM
-langchain
-langchain-groq
-
-# Embeddings
-sentence-transformers
-
-# Vector Database
-faiss-cpu
-chromadb
-
-# Document loaders
-pypdf
-unstructured
-
-# Backend API
-fastapi
-uvicorn
-
-# Optional UI (choose one)
-streamlit
-# gradio
-
-# Utilities
-tqdm
 streamlit==1.30.0
 python-dotenv==1.0.1
 langchain==0.1.232
@@ -34,3 +5,4 @@ langchain-groq==0.0.14
 sentence-transformers==2.2.2
 faiss-cpu==1.7.4
 pypdf==3.12.0
+requests==2.31.0
